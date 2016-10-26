@@ -25765,7 +25765,7 @@
 	
 	var _Panel2 = _interopRequireDefault(_Panel);
 	
-	var _placements = __webpack_require__(259);
+	var _placements = __webpack_require__(255);
 	
 	var _placements2 = _interopRequireDefault(_placements);
 	
@@ -30513,19 +30513,15 @@
 	  value: true
 	});
 	
-	var _defineProperty2 = __webpack_require__(251);
-	
-	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
-	
 	var _react = __webpack_require__(3);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Header = __webpack_require__(255);
+	var _Header = __webpack_require__(251);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Combobox = __webpack_require__(256);
+	var _Combobox = __webpack_require__(252);
 	
 	var _Combobox2 = _interopRequireDefault(_Combobox);
 	
@@ -30533,11 +30529,13 @@
 	
 	var _moment2 = _interopRequireDefault(_moment);
 	
-	var _classnames = __webpack_require__(258);
+	var _classnames = __webpack_require__(254);
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
 	function noop() {}
 	
@@ -30646,7 +30644,7 @@
 	
 	    return _react2.default.createElement(
 	      'div',
-	      { className: (0, _classnames2.default)((_classNames = {}, (0, _defineProperty3.default)(_classNames, prefixCls + '-inner', true), (0, _defineProperty3.default)(_classNames, className, !!className), _classNames)) },
+	      { className: (0, _classnames2.default)((_classNames = {}, _defineProperty(_classNames, prefixCls + '-inner', true), _defineProperty(_classNames, className, !!className), _classNames)) },
 	      _react2.default.createElement(_Header2.default, {
 	        clearText: clearText,
 	        prefixCls: prefixCls,
@@ -30692,59 +30690,6 @@
 
 /***/ },
 /* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _defineProperty = __webpack_require__(252);
-	
-	var _defineProperty2 = _interopRequireDefault(_defineProperty);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (obj, key, value) {
-	  if (key in obj) {
-	    (0, _defineProperty2.default)(obj, key, {
-	      value: value,
-	      enumerable: true,
-	      configurable: true,
-	      writable: true
-	    });
-	  } else {
-	    obj[key] = value;
-	  }
-	
-	  return obj;
-	};
-
-/***/ },
-/* 252 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(253), __esModule: true };
-
-/***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(254);
-	var $Object = __webpack_require__(186).Object;
-	module.exports = function defineProperty(it, key, desc){
-	  return $Object.defineProperty(it, key, desc);
-	};
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export = __webpack_require__(184);
-	// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-	$export($export.S + $export.F * !__webpack_require__(194), 'Object', {defineProperty: __webpack_require__(190).f});
-
-/***/ },
-/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30940,7 +30885,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 256 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30953,7 +30898,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Select = __webpack_require__(257);
+	var _Select = __webpack_require__(253);
 	
 	var _Select2 = _interopRequireDefault(_Select);
 	
@@ -31103,7 +31048,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 257 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31111,10 +31056,6 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	var _defineProperty2 = __webpack_require__(251);
-	
-	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 	
 	var _react = __webpack_require__(3);
 	
@@ -31124,11 +31065,13 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _classnames2 = __webpack_require__(258);
+	var _classnames2 = __webpack_require__(254);
 	
 	var _classnames3 = _interopRequireDefault(_classnames2);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
 	var scrollTo = function scrollTo(element, to, duration) {
 	  var requestAnimationFrame = window.requestAnimationFrame || function requestAnimationFrameTimeout() {
@@ -31189,7 +31132,7 @@
 	    return options.map(function (item, index) {
 	      var _classnames;
 	
-	      var cls = (0, _classnames3.default)((_classnames = {}, (0, _defineProperty3.default)(_classnames, prefixCls + '-select-option-selected', selectedIndex === index), (0, _defineProperty3.default)(_classnames, prefixCls + '-select-option-disabled', item.disabled), _classnames));
+	      var cls = (0, _classnames3.default)((_classnames = {}, _defineProperty(_classnames, prefixCls + '-select-option-selected', selectedIndex === index), _defineProperty(_classnames, prefixCls + '-select-option-disabled', item.disabled), _classnames));
 	      var onclick = null;
 	      if (!item.disabled) {
 	        onclick = _this.onSelect.bind(_this, +item.value);
@@ -31245,7 +31188,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 258 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31299,7 +31242,7 @@
 
 
 /***/ },
-/* 259 */
+/* 255 */
 /***/ function(module, exports) {
 
 	'use strict';
